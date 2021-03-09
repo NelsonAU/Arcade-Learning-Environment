@@ -11,3 +11,4 @@ The changes here are intended to:
 Specific changes from upstream:
 
 * Only the base C++ interface; no Python bindings
+* No CMake or Docker
