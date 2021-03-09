@@ -60,7 +60,6 @@ namespace ale {
 std::string ALEInterface::welcomeMessage() {
   std::ostringstream oss;
   oss << "A.L.E: Arcade Learning Environment "
-      << "(version " << ALE_VERSION << "+" << ALE_VERSION_GIT_SHA ")\n"
       << "[Powered by Stella]";
   return oss.str();
 }

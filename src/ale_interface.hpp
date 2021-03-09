@@ -37,7 +37,6 @@
 #include "environment/stella_environment.hpp"
 #include "common/ScreenExporter.hpp"
 #include "common/Log.hpp"
-#include "version.hpp"
 
 #include <string>
 #include <memory>
