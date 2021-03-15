@@ -75,6 +75,12 @@ class ALEState {
   //Get the number of frames executed this episode.
   int getEpisodeFrameNumber() const { return m_episode_frame_number; }
 
+  //Get the current position of the left paddle controller
+  int getLeftPaddle() const { return m_left_paddle; }
+
+  //Get the current position of the right paddle controller
+  int getRightPaddle() const { return m_right_paddle; }
+
   /** set the difficulty according to the value.
    *  If the first bit is 1, then it will put the left difficulty switch to A (otherwise leave it on B)
    *  If the second bit is 1, then it will put the right difficulty switch to A (otherwise leave it on B)

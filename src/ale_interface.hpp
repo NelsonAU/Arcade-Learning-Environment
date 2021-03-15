@@ -160,6 +160,13 @@ class ALEInterface {
   // Returns the current RAM content
   const ALERAM& getRAM();
 
+  // Returns paddle information
+  // Note that for games that use paddles, current paddle position is needed in
+  // addition to the RAM for a complete game state
+  bool usesPaddles() const { return environment->usesPaddles(); }
+  int getLeftPaddle() const { return environment->getLeftPaddle(); }
+  int getRightPaddle() const { return environment->getRightPaddle(); }
+
   // Saves the state of the system
   void saveState();
 

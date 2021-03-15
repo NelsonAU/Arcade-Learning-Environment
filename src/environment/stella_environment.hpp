@@ -101,6 +101,11 @@ class StellaEnvironment {
 
   Random& getSystemRng() { return m_osystem->rng(); }
 
+  /** Accessor methods for the paddles. */
+  bool usesPaddles() const { return m_use_paddles; }
+  int getLeftPaddle() const { return m_state.getLeftPaddle(); }
+  int getRightPaddle() const { return m_state.getRightPaddle(); }
+
   // Returns the current difficulty switch setting in use by the environment.
   difficulty_t getDifficulty() const { return m_state.getDifficulty(); }
 
