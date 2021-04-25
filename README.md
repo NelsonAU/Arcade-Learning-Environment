@@ -10,5 +10,6 @@ The changes here are intended to:
 
 Specific changes from upstream:
 
+* Paddle positions are exposed in the API
 * Only the base C++ interface; no Python bindings
 * No CMake or Docker
