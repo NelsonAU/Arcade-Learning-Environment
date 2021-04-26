@@ -10,6 +10,10 @@ The changes here are intended to:
 
 Specific changes from upstream:
 
-* Paddle positions are exposed in the API
+* Paddle positions are exposed in the API (needed for complete observable state)
+* Make restoreState() restore the screen and RAM instead of leaving stale values
+  * Upstream pull request: https://github.com/mgbellemare/Arcade-Learning-Environment/pull/413
+* Applied Jesse Farebrother's patch to fix nondeterminism issues
+  * Upstream pull request: https://github.com/mgbellemare/Arcade-Learning-Environment/pull/401
 * Only the base C++ interface; no Python bindings
 * No CMake or Docker
