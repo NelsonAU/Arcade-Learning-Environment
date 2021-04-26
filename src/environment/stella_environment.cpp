@@ -123,6 +123,8 @@ ALEState StellaEnvironment::cloneState() {
 
 void StellaEnvironment::restoreState(const ALEState& target_state) {
   m_state.load(m_osystem, m_settings, &m_random, m_cartridge_md5, target_state);
+  processScreen();
+  processRAM();
 }
 
 void StellaEnvironment::noopIllegalActions(Action& player_a_action,
