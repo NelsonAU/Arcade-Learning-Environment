@@ -4,9 +4,10 @@ For the main (upstream) project see: https://github.com/mgbellemare/Arcade-Learn
 
 The changes here are intended to:
 
+* Provide a serializable state that represents unique game states
+* Apply fixes that haven't yet made it into upstream
 * Make it easier to "vendor" the ALE source under another C++ project and
   compile it directly (vs building ALE as a library)
-* Provide a serializable state that represents unique game states
 
 Specific changes from upstream:
 
